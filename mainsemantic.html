@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <link rel="stylesheet" href="dist\semantic.min.css">
+  <script src="dist\semantic.min.js"></script>
+  <title>Main Semantic</title>
+  <style>
+  #firstcard{
+      margin-top: 12px;
+  }
+  .jumbo img
+  {
+  height:600px;
+padding-top:80px;
+margin-left: 5px;
+padding-left: 10px;
+width: 1500px;
+border-radius: 5px;
+
+  }
+
+  #heading
+  {
+    width: 100%;
+    margin-left: 0px;
+    background-color: grey;
+    height: 80px;
+    position: fixed;
+    z-index: 2;
+  }
+
+
+#heading img{
+  height: 80px;
+  width:100px;
+  position: relative;
+  top:-25px;
+  margin-left:0px;
+  padding-top: 20px;
+
+}
+#data2
+{
+  margin-top: 10px;
+  margin-left: 0px;
+  background-color: white	;
+  border-radius: 5px;
+}
+#data2 img
+{
+  height: 450px;
+  margin-top: 0px;
+  background-color: white;
+  width: 100%;
+}
+.whole{
+  background-color: white;
+}
+  /*#first,#second,#third
+  {
+    background-color: white;
+    height: 500px;
+    border: 1px solid white;
+    margin:5px;
+    padding: 5px;
+  }*/
+  #r1,#r2,#r3
+  {
+    border: 1px solid white;
+    height: 160px;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  #firstcol
+  {
+    background-color: white	;
+    height: 500px;
+    border: 1px solid white;
+    padding-left: 20px;
+    border-radius: 5px;
+  }
+  #secondcol
+{
+  background-color: white	;
+  height: 500px;
+  border: 1px solid white;
+  margin-right:0px;
+  border-radius: 5px;
+}
+  #footer
+  {
+    text-align: center;
+    height:100px;
+    border:1px solid white;
+    background-color: white	;
+    border-radius: 5px;
+    margin-top: 50px;
+  }
+  /*#data
+  {
+    z-index: 1;
+  }*/
+  #cards img
+  {
+
+    height: 300px;
+  }
+  #cards
+  {
+    margin: 5px;
+    height: 600px;
+    padding-left: 80px;
+    padding-top: 10px;
+  }
+
+
+  /*#heading
+  {
+    position: fixed;
+
+
+  }*/
+  #footer ul li{
+    display: inline;
+    padding: 10px;
+  }
+  #footer a{
+      color: black;
+  }
+
+  #main
+  {
+    padding-left: 40px;
+    color: white;
+  }
+  @media only screen and (max-width:1200px)
+  {
+    #firstcol
+    {
+      width:300px;
+    }
+    .flip
+    {
+      margin-top: 600px;
+    }
+}
+@media only screen and (max-width:767px)
+{
+  .column menu
+  {
+    display: block;
+  }
+  #firstcol
+  {
+    width:300px;
+  }
+  .flip
+  {
+
+    margin-top: 840px;
+  }
+  .maincontent{
+    padding-top: 350px;
+  }
+#footer{
+  margin-top: 20px;
+
+  text-align: center;
+}
+}
+@media only screen and (max-width:700px)
+{
+
+  #firstcol
+  {
+    width:300px;
+  }
+  .flip
+  {
+
+    margin-top: 1000px;
+  }
+#footer{
+  margin-top: 20px;
+
+  text-align: center;
+}
+}
+@media only screen and (max-width:500px)
+{
+  #firstcol
+  {
+    width:300px;
+  }
+  .flip
+  {
+
+    margin-top: 1500px;
+  }
+#footer{
+  margin-top: 20px;
+
+  text-align: center;
+}
+}
+
+@media only screen and (max-width:1000px)
+{
+  .head img
+  {
+    width: 75px;
+    padding-top: 20px;
+  }
+}
+  </style>
+</head>
+<body>
+
+      <!-- <div class="ui container head"> -->
+    <div class="ui grid stackable" id="heading">
+
+      <div class="ui two wide column" style="background-color:grey">
+        <img src="img/carlogo.jpg" alt="">
+        </div>
+
+      <div class="ui four wide column" style="background-color:grey">
+        <h1>Car Trade</h1></div>
+       <div class="ui ten wide column" style="background-color:grey;">
+       <div class="ui menu stackable">
+         <a class="active item"> <i class="home icon"></i> Home </a> <a class="item"> <i class="mail icon"></i> Messages
+       </a>
+       <a class="item"> <i class="call icon"></i> contact
+     </a>
+     <a class="item" href="help.html"> <i class="help icon"></i> help
+   </a>
+         <div class="right menu">
+           <div class="item">
+             <div class="ui transparent icon input">
+               <input type="text" placeholder="Search..."> <i class="search link icon"></i>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+  <!-- </div> -->
+  <div class="ui one column center aligned grid" id="main">
+
+<div class="ui container maincontent">
+<div class="ui container jumbo">
+    <div class="ui grid" id="img1">
+      <img src="img/carbg.jpg" alt="">
+
+    </div>
+</div>
+<div class="ui container data">
+
+    <div class="ui cards stackable" id="cards" >
+
+<div class="card" >
+  <div class="image">
+    <img src="img/car1.jpg">
+  </div>
+  <div class="content">
+    <div class="header">Renault Lodgy</div>
+    <div class="description">
+      The stunning Renault LODGY features a bold, jewel-studded front grille, enhanced by striking fog lamps with chrome satin garnish. On the inside, it is the perfect blend of sophistication and comfort.
+
+
+    </div>
+  </div>
+  <div class="extra content">
+    <span class="right floated">
+      launched on 2014
+    </span>
+    <span>
+      <i class="user icon"></i>
+      75 views
+    </span>
+  </div>
+</div>
+        <div class="card">
+    <div class="image">
+      <img src="img/car2.jpg">
+    </div>
+    <div class="content">
+      <div class="header">Chevrolet</div>
+
+      <div class="description">
+        The 2016 Chevrolet Beat comes in 7 vibrant colors that perfectly complement its funky and stylish exterior design.The signature Chevrolet dual port chrome-lined grille gives the car its bold, stylish front. Add to it the stunning headlamps and stylish fog lamps with a classy chrome-lined contrasting black surround, and you get the perfect, suave city look.
+      </div>
+    </div>
+    <div class="extra content">
+      <span class="right floated">
+        launched on 2014
+      </span>
+      <span>
+        <i class="user icon"></i>
+        75 views
+      </span>
+    </div>
+  </div>
+  <div class="card">
+    <div class="image">
+      <img src="img/car3.jpg">
+    </div>
+    <div class="content">
+      <div class="header">Ford Fiesta</div>
+
+      <div class="description">
+        The engineers at Ford gave Fiesta the best of technical specifications. Ford Fiesta 1.5 TDCi Titanium is 5 Speed geared, with Manual transmission, Ventillated Disc brakes at the front and Self Adjusting Drums brakes at t
+        the rear d Semi-independent Twist Beam With Twin Shock Absorbers Filled With
+        Gas and Oil rear suspension, making it a rather safe drive.
+
+      </div>
+    </div>
+    <div class="extra content">
+      <span class="right floated">
+        launched on 2011
+      </span>
+      <span>
+        <i class="user icon"></i>
+        75 views
+      </span>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="ui container flip">
+    <div class="ui grid stackable"  id="data2">
+      <div class="ui eight wide column" id="firstcol">
+        <div class="ui shape">
+          <div class="sides">
+            <div class="active side">
+                <div class="ui raised segment">
+                  <img src="img/fcar1.jpg" alt="">
+              </div>
+            </div>
+            <div class="side">
+                <div class="ui raised segment">
+                <img src="img/fcar2.jpg" alt="">
+                  </div>
+            </div>
+            <div class="side">
+                <div class="ui raised segment">
+                <img src="img/fcar3.jpg" alt="">
+                  </div>
+            </div>
+            <div class="side">
+                <div class="ui raised segment">
+                <img src="img/fcar4.jpg" alt="">
+                  </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="ui vertical divider"></div>
+      <div class="ui eight wide column" id="secondcol">
+        <div class="ui row" id="r1">
+          <div class="ui accordion" id="test">
+          <div class="title">
+          <i class="dropdown icon"></i>
+          About
+          </div>
+          <div class="content">
+          <p>We provides you with an easy and hassle-free car-selling experience. We are an online platform with ambitions to change the way people sell used cars. If you're thinking about selling your used car, but don't want the hassle that comes along with it, you're in good hands.</p>
+          </div>
+
+          </div>
+        </div>
+          <div class="ui row" id="r2">
+            <div class="ui accordion" id="test">
+            <div class="title">
+            <i class="dropdown icon"></i>
+            Convenience
+            </div>
+            <div class="content">
+              <p>Our offer is dedicated to people looking to sell their used car quickly, but don't want the hassle that comes along with it. As India's best online platform for selling cars we have made it our mission to ensure a fast and easy car-selling experience. No more waiting around, making appointments, answering calls or handling paperwork.</p>
+            </div>
+
+            </div>
+            </div>
+            <div class="ui row" id="r3">
+              <div class="ui accordion" id="test">
+              <div class="title">
+              <i class="dropdown icon"></i>
+              Focus
+              </div>
+              <div class="content">
+                <p>We provides you with a free quote for your car, anytime and anywhere. We are the experts in car assessment and correct-price evaluation. Our quotes are 100% transparent, which allows you to compare different quotes. If you're happy with your used car valuation, you can choose to book an appointment at one of our friendly and trusted centres. We always offer instant payment and a guaranteed transfer of ownership!</p>
+              </div>
+
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    <div class="ui container">
+      <div class="ui column" id="footer">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+<script>
+$('.accordion').accordion();
+$('#dropdown').click(function(){
+  $('.ui.hover').shape('flip right');
+});
+function flipl()
+{
+  $('.ui.shape').shape('flip right');
+}
+$('.ui.container.image').dimmer({on:'hover'});
+setInterval(flipl,3000);
+</script>
+</body>
+</html>
