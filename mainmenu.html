@@ -24,29 +24,42 @@ body{
   <div class="column six wide form-holder">
     <h2 class="center aligned header form-head">Sign in</h2>
     <div class="ui form">
-      <form action="mainsemantic.html">
+      <form action="mainsemantic.html" name="login">
       <div class="field">
-        <input type="text" placeholder="username" required="">
+        <input type="text" placeholder="username" required="" name="uname">
       </div>
       <div class="field">
-        <input type="password" placeholder="password" required="">
+        <input type="password" placeholder="password" required="" name="password">
       </div>
       <div class="field">
-        <input type="submit" value="sign in" class="ui button large fluid green">
+        <input type="submit" value="sign in" class="ui button large fluid grey">
       </div>
       <div class="inline field">
         <div class="ui checkbox">
           <input type="checkbox">
           <label>Remember me</label>
         </div>
-        <a href="forget.html">forget password?</a>
+        <a href="forget.html">New user?</a>
       </div>
       </form>
     </div>
+    
   </div>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="../dist/semantic.min.js"></script>
+<script>
+  function validate()
+  {
+    var a=document.login.uname.value;
+    var b=document.login.password.value;
+    if(b.length()<6)
+    {
+
+    }
+  }
+
+</script>
 </body>
 </html>

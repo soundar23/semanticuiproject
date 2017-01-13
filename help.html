@@ -21,7 +21,7 @@
 padding-top:80px;
 margin-left: 5px;
 padding-left: 10px;
-width: 1500px;
+width: 100%;
 border-radius: 5px;
 
   }
@@ -168,7 +168,7 @@ border-radius: 5px;
     margin-top: 840px;
   }
   .maincontent{
-    padding-top: 350px;
+    padding-top: 300px;
   }
 #footer{
   margin-top: 20px;
@@ -178,6 +178,13 @@ border-radius: 5px;
 }
 @media only screen and (max-width:700px)
 {
+  #heading{
+    display: none;
+  }
+  .maincontent{
+    padding-top: -350px;
+  }
+
 
   #firstcol
   {
@@ -220,6 +227,7 @@ border-radius: 5px;
     padding-top: 20px;
   }
 }
+
   </style>
 </head>
 <body>
@@ -251,12 +259,30 @@ border-radius: 5px;
        </div>
      </div>
     </div>
+    <div class="ui grid stackable" id="sidebar">
+
+      <div class="ui sidebar vertical inverted menu">
+        <a class="active item"> <i class="home icon"></i> Home </a>
+        <a class="item"> <i class="mail icon"></i> Messages</a>
+        <a class="item"> <i class="call icon"></i> contact</a>
+        <a class="item" href="help.html"> <i class="help icon"></i> help</a>
+        <div class="ui transparent icon input">
+          <input type="text" placeholder="Search..."> <i class="search link icon"></i>
+        </div>
+      </div>
+      <div class="ui basic icon menu ">
+          <a id="toggle3" class="item">
+          <i class="sidebar icon"></i>
+          Menu
+          </a>
+      </div>
+</div>
 
       <div class="ui one column center aligned grid" id="main">
     <div class="ui container maincontent">
 <div class="ui container jumbo">
     <div class="ui grid" id="img1">
-      <img src="img/carbg.jpg" alt="">
+      <img src="img/carbg1.jpg" alt="">
 
     </div>
 </div>
@@ -332,6 +358,10 @@ function flipl()
 }
 $('.ui.container.image').dimmer({on:'hover'});
 setInterval(flipl,3000);
+$('#toggle3').click(function(){
+  $('.ui.sidebar').sidebar('toggle');
+
+});
 </script>
 </body>
 </html>
