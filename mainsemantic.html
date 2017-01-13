@@ -11,28 +11,15 @@
   <script src="dist\semantic.min.js"></script>
   <title>Main Semantic</title>
   <style>
-  #firstcard{
-      margin-top: 12px;
-  }
-  .jumbo img
-  {
-  height:600px;
-padding-top:80px;
-margin-left: 5px;
-padding-left: 10px;
-width: 1500px;
-border-radius: 5px;
-
-  }
-
   #heading
   {
     width: 100%;
     margin-left: 0px;
-    background-color: grey;
+    background-color: white;
     height: 80px;
     position: fixed;
     z-index: 2;
+
   }
 
 
@@ -45,6 +32,21 @@ border-radius: 5px;
   padding-top: 20px;
 
 }
+
+  #firstcard{
+      margin-top: 12px;
+  }
+  .jumbo img
+  {
+  height:600px;
+padding-top:10px;
+margin-left: 5px;
+padding-left: 10px;
+width: 1500px;
+border-radius: 5px;
+
+  }
+
 #data2
 {
   margin-top: 10px;
@@ -138,6 +140,7 @@ border-radius: 5px;
   {
     padding-left: 40px;
     color: white;
+    width: 100%;
   }
   @media only screen and (max-width:1200px)
   {
@@ -166,7 +169,7 @@ border-radius: 5px;
     margin-top: 840px;
   }
   .maincontent{
-    padding-top: 350px;
+    padding-top: 300px;
   }
 #footer{
   margin-top: 20px;
@@ -176,6 +179,13 @@ border-radius: 5px;
 }
 @media only screen and (max-width:700px)
 {
+  #heading{
+    display: none;
+  }
+  .maincontent{
+    padding-top: -350px;
+  }
+
 
   #firstcol
   {
@@ -225,20 +235,19 @@ border-radius: 5px;
       <!-- <div class="ui container head"> -->
     <div class="ui grid stackable" id="heading">
 
-      <div class="ui two wide column" style="background-color:grey">
+      <div class="ui two wide column" style="background-color:white">
         <img src="img/carlogo.jpg" alt="">
-        </div>
+      </div>
 
-      <div class="ui four wide column" style="background-color:grey">
-        <h1>Car Trade</h1></div>
-       <div class="ui ten wide column" style="background-color:grey;">
-       <div class="ui menu stackable">
-         <a class="active item"> <i class="home icon"></i> Home </a> <a class="item"> <i class="mail icon"></i> Messages
-       </a>
-       <a class="item"> <i class="call icon"></i> contact
-     </a>
-     <a class="item" href="help.html"> <i class="help icon"></i> help
-   </a>
+      <div class="ui four wide column" style="background-color:white">
+        <h1>Car Trade</h1>
+      </div>
+       <div class="ui ten wide column" style="background-color:white;">
+         <div class="ui menu stackable">
+           <a class="active item"> <i class="home icon"></i> Home </a>
+           <a class="item"> <i class="mail icon"></i> Messages</a>
+           <a class="item"> <i class="call icon"></i> contact</a>
+           <a class="item" href="help.html"> <i class="help icon"></i> help</a>
          <div class="right menu">
            <div class="item">
              <div class="ui transparent icon input">
@@ -246,9 +255,27 @@ border-radius: 5px;
              </div>
            </div>
          </div>
+        </div>
        </div>
-     </div>
-    </div>
+      </div>
+      <div class="ui grid stackable" id="sidebar">
+
+        <div class="ui sidebar vertical inverted menu">
+          <a class="active item"> <i class="home icon"></i> Home </a>
+          <a class="item"> <i class="mail icon"></i> Messages</a>
+          <a class="item"> <i class="call icon"></i> contact</a>
+          <a class="item" href="help.html"> <i class="help icon"></i> help</a>
+          <div class="ui transparent icon input">
+            <input type="text" placeholder="Search..."> <i class="search link icon"></i>
+          </div>
+        </div>
+        <div class="ui basic icon menu ">
+            <a id="toggle3" class="item">
+            <i class="sidebar icon"></i>
+            Menu
+            </a>
+        </div>
+</div>
   <!-- </div> -->
   <div class="ui one column center aligned grid" id="main">
 
@@ -293,7 +320,7 @@ border-radius: 5px;
       <div class="header">Chevrolet</div>
 
       <div class="description">
-        The 2016 Chevrolet Beat comes in 7 vibrant colors that perfectly complement its funky and stylish exterior design.The signature Chevrolet dual port chrome-lined grille gives the car its bold, stylish front. Add to it the stunning headlamps and stylish fog lamps with a classy chrome-lined contrasting black surround, and you get the perfect, suave city look.
+        The 2016 Chevrolet Beat comes in 7 vibrant colors that perfectly complement its funky and stylish exterior design.The signature Chevrolet dual port chrome-lined grille gives the car its bold, stylish front.
       </div>
     </div>
     <div class="extra content">
@@ -314,9 +341,7 @@ border-radius: 5px;
       <div class="header">Ford Fiesta</div>
 
       <div class="description">
-        The engineers at Ford gave Fiesta the best of technical specifications. Ford Fiesta 1.5 TDCi Titanium is 5 Speed geared, with Manual transmission, Ventillated Disc brakes at the front and Self Adjusting Drums brakes at t
-        the rear d Semi-independent Twist Beam With Twin Shock Absorbers Filled With
-        Gas and Oil rear suspension, making it a rather safe drive.
+        The engineers at Ford gave Fiesta the best of technical specifications. Ford Fiesta 1.5 TDCi Titanium is 5 Speed geared, with Manual transmission, Ventillated Disc brakes at the front and Self Adjusting.
 
       </div>
     </div>
@@ -432,6 +457,10 @@ function flipl()
 }
 $('.ui.container.image').dimmer({on:'hover'});
 setInterval(flipl,3000);
+$('#toggle3').click(function(){
+  $('.ui.sidebar').sidebar('toggle');
+
+});
 </script>
 </body>
 </html>
