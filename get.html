@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <link rel="stylesheet" href="dist\semantic.min.css">
+  <script src="dist\semantic.min.js"></script>
+  <title>Main Semantic</title>
+  <style>
+  #heading
+  {
+    width: 100%;
+    margin-left: 0px;
+    background-color: white;
+    height: 80px;
+    position: fixed;
+    z-index: 2;
+
+  }
+
+
+#heading img{
+  height: 80px;
+  width:100%;
+  position: relative;
+  top:-25px;
+  margin-left:0px;
+  padding-top: 20px;
+
+}
+
+  #firstcard{
+      margin-top: 12px;
+  }
+
+  #jumbo img
+  {
+  height:600px;
+padding-top:10px;
+margin-left: 0px;
+padding-left: 0px;
+width: 100%;
+border-radius: 5px;
+
+
+  }
+  .shape img{
+    width: 100%;
+  }
+
+#data2
+{
+  margin-top: 10px;
+  margin-left: 0px;
+  background-color: #D8D8D8		;
+  border-radius: 5px;
+  color: black;
+}
+#data2 img
+{
+  height: 450px;
+  margin-top: 0px;
+  background-color: white;
+  width: 100%;
+}
+.whole{
+  background-color: white;
+}
+  /*#first,#second,#third
+  {
+    background-color: white;
+    height: 500px;
+    border: 1px solid white;
+    margin:5px;
+    padding: 5px;
+  }*/
+  #r1,#r2,#r3
+  {
+    border: 1px solid #D8D8D8	;
+    height: 160px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #D8D8D8;
+  }
+  #firstcol
+  {
+    background-color: #D8D8D8	;
+    height: 500px;
+    border: 1px solid #D8D8D8	;
+    padding-left: 20px;
+    border-radius: 5px;
+  }
+  #secondcol
+{
+  background-color: #D8D8D8	;
+  height: 500px;
+  border: 1px solid #D8D8D8	;
+  margin-right:0px;
+  border-radius: 5px;
+}
+  /*#footer
+  {
+    text-align: center;
+    height:10px;
+    border:1px solid #D8D8D8	;
+    background-color: #D8D8D8	;
+    border-radius: 5px;
+    margin-top: 50px;
+  }*/
+  #data
+  {
+    width: 100%;
+  }
+  #cards img
+  {
+
+    height: 300px;
+  }
+
+  #cards
+  {
+    margin: 5px;
+    height: 550px;
+    padding-left: 180px;
+    padding-top: 10px;
+    width: 100%;
+  }
+
+
+
+  /*#heading
+  {
+    position: fixed;
+
+
+  }*/
+  #footer{
+    color:black;
+  }
+  #form
+  {
+    padding-top: 70px;
+  }
+  #footer .ui.row
+  {
+    background-color: grey;
+  }
+  #footer ul li{
+    display: inline;
+    padding: 10px;
+  }
+  ul li #imglink
+  {
+
+  }
+  #footer img{
+    height: 50px;
+    width:100px;
+
+  }
+  #footer a{
+  color: black;
+  }
+  #main
+  {
+    padding-left: 0px;
+    color: white;
+    background-color: #D8D8D8;
+
+  }
+  @media only screen and (max-width:1200px)
+  {
+    #firstcol
+    {
+      width:300px;
+    }
+    .flip
+    {
+      margin-top: 600px;
+    }
+}
+@media only screen and (max-width:767px)
+{
+  .column menu
+  {
+    display: block;
+  }
+  #firstcol
+  {
+    width:300px;
+  }
+  .flip
+  {
+
+    margin-top: 840px;
+  }
+  .main{
+    padding-top: 300px;
+  }
+}
+@media only screen and (max-width:700px)
+{
+  #heading{
+    display: none;
+  }
+  .main{
+    padding-top: -400px;
+  }
+
+
+  #firstcol
+  {
+    width:300px;
+  }
+  .flip
+  {
+
+    margin-top: 1000px;
+  }
+#footer{
+  margin-top: 20px;
+
+  text-align: center;
+}
+}
+@media only screen and (max-width:500px)
+{
+  #firstcol
+  {
+    width:300px;
+  }
+  .flip
+  {
+
+    margin-top: 1500px;
+  }
+#footer{
+  margin-top: 20px;
+
+  text-align: center;
+}
+}
+
+@media only screen and (max-width:1000px)
+{
+  .head img
+  {
+    width: 75px;
+    padding-top: 20px;
+  }
+}
+  </style>
+</head>
+<body>
+
+      <!-- <div class="ui container head"> -->
+    <div class="ui grid stackable" id="heading">
+
+      <div class="ui two wide column" style="background-color:#D8D8D8">
+        <img src="img/tlogo.jpg" alt="">
+      </div>
+
+      <div class="ui four wide column" style="background-color:#D8D8D8">
+        <img src="img/theading.jpg" alt="">
+      </div>
+       <div class="ui ten wide column" style="background-color:#D8D8D8">
+         <div class="ui menu stackable">
+           <a class="active item"> <i class="car icon"></i> Find a Dealer </a>
+           <a class="item"> <i class="calculator icon"></i> Price List</a>
+           <a class="item"> <i class="payment icon"></i> Buy now</a>
+           <a class="item"> <i class="book icon"></i> Brochure</a>
+           <a class="item"> <i class="exchange icon"></i> Exchange</a>
+         <div class="right menu">
+           <div class="item">
+             <div class="ui transparent icon input">
+               <input type="text" placeholder="Search..."> <i class="search link icon"></i>
+             </div>
+           </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="ui grid" id="sidebar">
+
+        <div class="ui sidebar vertical inverted menu">
+          <a class="active item"> <i class="car icon"></i> Find a Dealer </a>
+          <a class="item"> <i class="calculator icon"></i> Price List</a>
+          <a class="item"> <i class="payment icon"></i> Buy now</a>
+          <a class="item"> <i class="book icon"></i> Brochure</a>
+          <a class="item"> <i class="exchange icon"></i> Exchange</a>
+<div class="ui transparent icon input">
+            <input type="text" placeholder="Search..."> <i class="search link icon"></i>
+          </div>
+        </div>
+        <div class="ui basic icon menu ">
+            <a id="toggle3" class="item">
+            <i class="sidebar icon"></i>
+            Menu
+            </a>
+        </div>
+        <!-- <div class="ui four wide column" style="background-color:white">
+          <h1>Car Trade</h1>
+        </div> -->
+</div>
+  <!-- </div> -->
+  <div class="ui one column center aligned grid" id="main">
+
+
+
+    <div class="ui one column center aligned grid" id="jumbo">
+          <img src="img/tjumbo.jpg" alt="">
+
+
+    </div>
+    <div class="ui one column center aligned grid" id="login">
+    <div class="column six wide form-holder">
+      <h2 class="center aligned header form-head">Get On Road Price</h2>
+      <div class="ui form">
+        <form action="mainsemantic.html">
+        <div class="field">
+          <input type="text" placeholder="name" required="">
+        </div>
+        <div class="field">
+          <input type="email" placeholder="emailid" required="">
+        </div>
+        <div class="field">
+          <input type="text" placeholder="Model Name" required="">
+        </div>
+        <div class="field">
+          <input type="text" maxlength="10" placeholder="Phone number" required="">
+        </div>
+        <div class="field">
+          <select class="field" name="purchaseDate" data-bind="purchaseDate">
+               <option value="">When are you planning to buy?</option>
+               <option value="now">Immediately</option>
+               <option value="2week">Within 2 weeks</option>
+               <option value="1month">Within a month</option>
+               <option value="no">Just researching</option>
+           </select>
+        </div>
+        <div class="field">
+            <input type="text" maxlength="7" placeholder="Pin Code" required="">
+        </div>
+
+
+        <div class="field">
+          <input type="submit" value="Get On Road Price" class="ui button large fluid grey">
+        </div>
+        </form>
+      </div>
+      </div>
+      </div>
+
+
+
+      <div class="ui one column center aligned grid" id="footer">
+        <div class="ui row" style="background-color:grey">  <p><h1>Trusted By Our Regular Customers</h1></p></div>
+        <div class="ui row">
+          <ul id="imglink">
+            <li><a href="#"><img src="img/avislogo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/leaselogo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/olalogo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/goibibologo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/wticabslogo.jpg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="ui row">
+          <ul class="copyright-list">
+                      <li><a href=""><span class="item" data-link="/advertise-with-us/">Advertise with us</span></a></li>
+                      <li><a href="#"><span class="item" data-link="/aboutus.html">About us</span></a></li>
+                      <li><a href="#"><span class="item" data-link="/feedback.html">Contact us</span></a></li>
+                      <li><a href="#"><span class="item" data-link="/privacy_policy.html">Privacy Policy</span></a></li>
+                      <li><a href="#"><span class="item" data-link="/visitor_agreement.html">Visitor Agreement</span></a></li>
+                      <li><a class="item" href="/autoexpo/">Auto Expo 2016</a></li>
+            </ul>
+
+            </div>
+            <div class="ui row">
+
+
+              <ul>
+              <li><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<script>
+$('.accordion').accordion();
+$('#dropdown').click(function(){
+  $('.ui.hover').shape('flip right');
+});
+function flipl()
+{
+  $('.ui.shape').shape('flip right');
+}
+$('.card').dimmer({on:'hover'});
+$('#imglink a').dimmer({on:'hover'});
+setInterval(flipl,3000);
+$('#toggle3').click(function(){
+  $('.ui.sidebar').sidebar('toggle');
+
+});
+</script>
+</body>
+</html>
