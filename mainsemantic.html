@@ -25,7 +25,7 @@
 
 #heading img{
   height: 80px;
-  width:100px;
+  width:100%;
   position: relative;
   top:-25px;
   margin-left:0px;
@@ -47,6 +47,9 @@ width: 100%;
 border-radius: 5px;
 
 
+  }
+  .shape img{
+    width: 100%;
   }
 
 #data2
@@ -99,15 +102,15 @@ border-radius: 5px;
   margin-right:0px;
   border-radius: 5px;
 }
-  #footer
+  /*#footer
   {
     text-align: center;
-    height:100px;
+    height:10px;
     border:1px solid #D8D8D8	;
     background-color: #D8D8D8	;
     border-radius: 5px;
     margin-top: 50px;
-  }
+  }*/
   #data
   {
     width: 100%;
@@ -128,20 +131,41 @@ border-radius: 5px;
   }
 
 
+
   /*#heading
   {
     position: fixed;
 
 
   }*/
+
+  #footer{
+    color:black;
+  }
+  #form
+  {
+    padding-top: 70px;
+  }
+  #footer .ui.row
+  {
+    background-color: grey;
+  }
   #footer ul li{
     display: inline;
     padding: 10px;
   }
-  #footer a{
-      color: black;
-  }
+  ul li #imglink
+  {
 
+  }
+  #footer img{
+    height: 50px;
+    width:100px;
+
+  }
+  #footer a{
+  color: black;
+  }
   #main
   {
     padding-left: 0px;
@@ -160,8 +184,20 @@ border-radius: 5px;
       margin-top: 600px;
     }
 }
+@media only screen and (max-width:1000px)
+{
+  #heading{
+    display:none;
+  }
+}
+
 @media only screen and (max-width:767px)
 {
+  #heading{
+    display: none;
+  }
+
+
   .column menu
   {
     display: block;
@@ -178,11 +214,6 @@ border-radius: 5px;
   .main{
     padding-top: 300px;
   }
-#footer{
-  margin-top: 20px;
-
-  text-align: center;
-}
 }
 @media only screen and (max-width:700px)
 {
@@ -242,37 +273,33 @@ border-radius: 5px;
       <!-- <div class="ui container head"> -->
     <div class="ui grid stackable" id="heading">
 
-      <div class="ui two wide column" style="background-color:#D8D8D8">
-        <img src="img/carlogo.jpg" alt="">
+      <div class="ui two wide column" style="background-color:grey">
+        <img src="img/tlogo.jpg" alt="">
       </div>
 
-      <div class="ui four wide column" style="background-color:#D8D8D8">
-        <h1>Car Trade</h1>
+      <div class="ui four wide column" style="background-color:grey">
+        <img src="img/theading.jpg" alt="">
       </div>
-       <div class="ui ten wide column" style="background-color:#D8D8D8">
+       <div class="ui ten wide column" style="background-color:grey">
          <div class="ui menu stackable">
-           <a class="active item"> <i class="home icon"></i> Home </a>
-           <a class="item"> <i class="mail icon"></i> Messages</a>
-           <a class="item"> <i class="call icon"></i> contact</a>
-           <a class="item" href="help.html"> <i class="help icon"></i> help</a>
-         <div class="right menu">
-           <div class="item">
-             <div class="ui transparent icon input">
-               <input type="text" placeholder="Search..."> <i class="search link icon"></i>
-             </div>
-           </div>
-         </div>
+           <a class="active item"> <i class="car icon"></i> Find a Dealer </a>
+           <a class="item"> <i class="calculator icon"></i> Price List</a>
+           <a class="item"> <i class="payment icon"></i> Buy now</a>
+           <a class="item"> <i class="book icon"></i> Brochure</a>
+           <a class="item"> <i class="exchange icon"></i> Exchange</a>
+
         </div>
        </div>
       </div>
       <div class="ui grid" id="sidebar">
 
         <div class="ui sidebar vertical inverted menu">
-          <a class="active item"> <i class="home icon"></i> Home </a>
-          <a class="item"> <i class="mail icon"></i> Messages</a>
-          <a class="item"> <i class="call icon"></i> contact</a>
-          <a class="item" href="help.html"> <i class="help icon"></i> help</a>
-          <div class="ui transparent icon input">
+          <a class="active item"> <i class="car icon"></i> Find a Dealer </a>
+          <a class="item"> <i class="calculator icon"></i> Price List</a>
+          <a class="item"> <i class="payment icon"></i> Buy now</a>
+          <a class="item"> <i class="book icon"></i> Brochure</a>
+          <a class="item"> <i class="exchange icon"></i> Exchange</a>
+<div class="ui transparent icon input">
             <input type="text" placeholder="Search..."> <i class="search link icon"></i>
           </div>
         </div>
@@ -291,8 +318,8 @@ border-radius: 5px;
 
 
 
-    <div class="uione column center aligned grid" id="jumbo">
-          <img src="img/carbg.jpg" alt="">
+    <div class="ui one column center aligned grid" id="jumbo">
+          <img src="img/tjumbo.jpg" alt="">
 
 
     </div>
@@ -302,13 +329,37 @@ border-radius: 5px;
     <div class="ui cards stackable" id="cards" >
 
 <div class="card" >
-  <div class="image">
-    <img src="img/car1.jpg">
+  <!-- <div class="image">
+    <img src="img/tcar1.jpg">
+    <div class="ui dimmer">
+    <div class="content">
+      <div class="center">
+        <h2 class="ui inverted icon header">
+          <i class="heart icon"></i>
+          Dimmed Message!
+        </h2>
+      </div>
+    </div>
+  </div>
+  </div> -->
+
+    <div class="ui dimmer">
+      <div class="content">
+        <div class="center">
+          <h2 class="ui inverted header">Details</h2>
+          <div class="ui primary button">Get valuation</div>
+          <div class="ui button">View More</div>
+        </div>
+      </div>
+    </div>
+  <div class="ui medium image">
+    <img class="ui image" src="img/tcar1.jpg">
+
   </div>
   <div class="content">
-    <div class="header">Renault Lodgy</div>
+    <div class="header">Toyota Camry(hybrid)</div>
     <div class="description">
-      The stunning Renault LODGY features a bold, jewel-studded front grille, enhanced by striking fog lamps with chrome satin garnish. On the inside, it is the perfect blend of sophistication and comfort.
+      The Camry Hybrid exemplifies the ultimate form of style and elegance. Its sleek and dynamic body design creates a luxuriously advanced look.
 
 
     </div>
@@ -324,14 +375,24 @@ border-radius: 5px;
   </div>
 </div>
         <div class="card">
-    <div class="image">
-      <img src="img/car2.jpg">
-    </div>
+          <div class="ui dimmer">
+            <div class="content">
+              <div class="center">
+                <h2 class="ui inverted header">Details</h2>
+                <div class="ui primary button">Get valuation</div>
+                <div class="ui button">View More</div>
+              </div>
+            </div>
+          </div>
+        <div class="ui medium image">
+          <img class="ui image" src="img/tcar2.jpg">
+
+        </div>
     <div class="content">
-      <div class="header">Chevrolet</div>
+      <div class="header">Fortuner</div>
 
       <div class="description">
-        The 2016 Chevrolet Beat comes in 7 vibrant colors that perfectly complement its funky and stylish exterior design.The signature Chevrolet dual port chrome-lined grille gives the car its bold, stylish front.
+        The new Fortuner is 90 mm longer and 15 mm wider than the outgoing model, while the wheelbase remains identical.The exterior features comprising of sharp lines and contemporary elements that make the Fortuner look bolder than ever.
       </div>
     </div>
     <div class="extra content">
@@ -345,14 +406,25 @@ border-radius: 5px;
     </div>
   </div>
   <div class="card">
-    <div class="image">
-      <img src="img/car3.jpg">
+    <div class="ui dimmer">
+      <div class="content">
+        <div class="center">
+          <h2 class="ui inverted header">Details</h2>
+          <div class="ui primary button">Get valuation</div>
+          <div class="ui button">View More</div>
+
+        </div>
+      </div>
     </div>
-    <div class="content">
-      <div class="header">Ford Fiesta</div>
+  <div class="ui medium image">
+    <img class="ui image" src="img/tcar3.jpg">
+
+  </div>
+  <div class="content">
+      <div class="header">Innova Crysta</div>
 
       <div class="description">
-        The engineers at Ford gave Fiesta the best of technical specifications. Ford Fiesta 1.5 TDCi Titanium is 5 Speed geared, with Manual transmission, Ventillated Disc brakes at the front and Self Adjusting.
+        The Toyota Innova Crysta is based on an all-new platform, and will get a new engine with a 6-speed automatic transmission, the car maker confirmed in a statement.
 
       </div>
     </div>
@@ -376,22 +448,22 @@ border-radius: 5px;
           <div class="sides">
             <div class="active side">
                 <div class="ui raised segment">
-                  <img src="img/fcar1.jpg" alt="">
+                  <img src="img/tflip1.jpg" alt="">
               </div>
             </div>
             <div class="side">
                 <div class="ui raised segment">
-                <img src="img/fcar2.jpg" alt="">
+                <img src="img/tflip2.jpg" alt="">
                   </div>
             </div>
             <div class="side">
                 <div class="ui raised segment">
-                <img src="img/fcar3.jpg" alt="">
+                <img src="img/tflip3.jpg" alt="">
                   </div>
             </div>
             <div class="side">
                 <div class="ui raised segment">
-                <img src="img/fcar4.jpg" alt="">
+                <img src="img/tflip4.jpg" alt="">
                   </div>
             </div>
 
@@ -439,20 +511,47 @@ border-radius: 5px;
             </div>
           </div>
         </div>
+          <div class="ui one column center aligned grid" id="form">
+            <div class="ui blue button"><a href="get.html" style="color:white">Get On Road Price</a></div>
+          </div>
 
 
-    <div class="ui container">
-      <div class="ui column" id="footer">
-        <ul>
-          <li><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></li>
-        </ul>
+      <div class="ui one column center aligned grid" id="footer">
+        <div class="ui row" style="background-color:grey">  <p><h1>Trusted By Our Regular Customers</h1></p></div>
+        <div class="ui row">
+          <ul id="imglink">
+            <li><a href="#"><img src="img/avislogo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/leaselogo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/olalogo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/goibibologo.jpg" alt=""></a></li>
+            <li><a href="#"><img src="img/wticabslogo.jpg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="ui row">
+          <ul class="copyright-list">
+                      <li><a href=""><span class="item" data-link="/advertise-with-us/">Advertise with us</span></a></li>
+                      <li><a href="#"><span class="item" data-link="/aboutus.html">About us</span></a></li>
+                      <li><a href="#"><span class="item" data-link="/feedback.html">Contact us</span></a></li>
+                      <li><a href="#"><span class="item" data-link="/privacy_policy.html">Privacy Policy</span></a></li>
+                      <li><a href="#"><span class="item" data-link="/visitor_agreement.html">Visitor Agreement</span></a></li>
+                      <li><a class="item" href="/autoexpo/">Auto Expo 2016</a></li>
+            </ul>
 
+            </div>
+            <div class="ui row">
+
+
+              <ul>
+              <li><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+          </p>
+        </div>
       </div>
     </div>
 
-  </div>
+
 
 
 <script>
@@ -464,7 +563,8 @@ function flipl()
 {
   $('.ui.shape').shape('flip right');
 }
-$('.ui.container.image').dimmer({on:'hover'});
+$('.card').dimmer({on:'hover'});
+$('#imglink a').dimmer({on:'hover'});
 setInterval(flipl,3000);
 $('#toggle3').click(function(){
   $('.ui.sidebar').sidebar('toggle');
